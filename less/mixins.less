@@ -1,6 +1,15 @@
-.flex(@justify,@align,@flow){
-    display:flex;
-    justify-content:@justify;
-    align-items: @align;
-    flex-flow: @flow;
+.flex(@justify,@align,@flow) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  flex-flow: @flow;
+}
+
+.btn-mkr(@text,@background,@corner) {
+  color: @text;
+  background-color: @background;
+  border-radius: @corner;
+  text-align: center;
+  padding: 5px 15px;
+  font-size: 1.8rem;
 }
