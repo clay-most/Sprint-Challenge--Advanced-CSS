@@ -2,6 +2,9 @@
 .home {
   .banner {
     border-radius: 5px;
+    @media @phone {
+      max-width: 100%;
+    }
   }
   .intro {
     h2 {
@@ -23,6 +26,18 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      .blast {
+        @media @phone {
+          width: 100%;
+          height:auto;
+        }
+      }
+      .sky,
+      .launch {
+        @media @phone {
+          display: none;
+        }
+      }
     }
   }
 
@@ -44,9 +59,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media@phone {
+      .flex(space-between, center, column-reverse);
+      padding: 15px 10px;
+    }
 
     .walk-text {
       width: 50%;
+      @media@phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -57,14 +79,17 @@
       }
 
       .btn {
-        .btn-mkr(white,black,5px)
+        .btn-mkr(white, black, 5px);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-
+      @media@phone{
+        width: 100%;
+        margin:0;
+      }
       img {
         width: 100%;
         height: auto;
