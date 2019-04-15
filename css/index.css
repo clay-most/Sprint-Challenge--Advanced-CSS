@@ -279,7 +279,7 @@ footer {
   text-align: center;
   padding: 5px 15px;
 }
-.home .walk .walk-text .btn :hover {
+.home .walk .walk-text .btn:hover {
   color: black;
   background-color: white;
 }
