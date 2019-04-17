@@ -222,12 +222,11 @@ footer {
   height: 100%;
 }
 @media (max-width: 500px) {
-  .home .space-images img .blast {
+  .home .space-images img {
     width: 100%;
-    height: auto;
   }
-  .home .space-images img .sky,
-  .home .space-images img .launch {
+  .home .space-images img.sky,
+  .home .space-images img.launch {
     display: none;
   }
 }
